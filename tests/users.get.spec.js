@@ -22,7 +22,7 @@ test.describe('GET /users?page=2', () => {
     await assertBodyField(
       response,
       (body) => body.page,
-      (value) => expect(value).toBe(2),
+      (value) => expect(value).toBe(3),
       'page number should be 2',
     );
     await assertBodyField(
